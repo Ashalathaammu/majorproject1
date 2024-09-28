@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="product-page">
+        <div class="product-gallery">
+            <img src="https://th.bing.com/th/id/OIP.nI1M8my9Qm1KrfnQCSF8JAHaLl?w=199&h=312&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Product Image" id="main-image">
+            <div class="thumbnails">
+                <img src="https://th.bing.com/th/id/OIP.lK6Z8q1oe1I1frbnHAo5ZQHaI4?pid=ImgDet&w=184&h=221&c=7&dpr=1.3" alt="Thumbnail 1" onclick="changeImage(this.src)">
+                <img src="https://th.bing.com/th/id/OIP.UfW3umfFQ5a4kM5LlrRSpQHaJ4?w=208&h=277&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Thumbnail 2" onclick="changeImage(this.src)">
+                <img src="https://th.bing.com/th/id/OIP.8zKxD8ivQ4P_Ew9-cTRLpQHaMW?w=193&h=322&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Thumbnail 3" onclick="changeImage(this.src)">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h1>Product Name</h1>
+            <p class="price">$49.99</p>
+            <p class="description">This is a brief description of the product. It highlights the main features and benefits of the product.</p>
+            
+            <div class="options">
+                <div class="size">
+                    <label for="size">Size:</label>
+                    <select id="size">
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                    </select>
+                </div>
+                
+                <div class="color">
+                    <label for="color">Color:</label>
+                    <select id="color">
+                        <option>Ash</option>
+                        <option>yellow</option>
+                        <option>blue</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('main-image').src = src;
+        }
+    </script>
+
+</body>
+</html>
